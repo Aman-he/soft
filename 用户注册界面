@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>用户注册</title>
+<link rel="stylesheet" href="stuform.css" type="text/css">
+</head>
+<body>
+<div class="bg">
+    <form action="#" method="get" autocomplete="off">
+    <h2>用户注册</h2>
+    <p><span>真实姓名：</span><input type="text" name="real_name"  pattern="^[\u4e00-\u9fa5]{0,}$"  required autofocus/>（必须填写，只能输入汉字）</p>
+    <p><span>用户学号：</span><input type="text" name="user_name"  required  />（必须填写）</p>
+    <p><span>密码：</span><input type="password" name  ="password"  placeholder="请输入密码" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" required/>（最少6位数）</p>
+    <p><span>确认密码：</span><input type="password" name  ="repassword"  placeholder="请确认密码" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')" required/>（必须填写）</p>
+      <datalist id="urllist">
+      <option>http://www.itcast.cn</option>
+      <option>http://www.boxuegu.com</option>
+      <option>http://www.w3school.com.cn</option>
+      </datalist>
+    </p>
+    <p class="btn">
+    <input type="submit" value="提交"/>
+    <input type="reset" value="重置"/>
+    </p>
+    </form>
+</div>
+</body>
+</html>
